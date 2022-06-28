@@ -25,7 +25,7 @@ def post_detail(request, slug):
             new_comment = comment_form.save(commit=False)
             new_comment.post = post
             new_comment.save()
-    else
+    else:
         comment_form = CommentForm()
 
     return render(
